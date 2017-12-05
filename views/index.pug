@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Hi !
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(href="./css/normalize.css", rel="stylesheet", type="text/css")
+    link(href="./css/app.css", rel="stylesheet", type="text/css")
+  body
+    section#home
+      #balls
+        .ball
+        .ball
+        .ball
+        .ball
+        .ball
+        .ball
+        .ball
+      figure
+        img(src='./img/phone-uncolored.png')
+        svg
+          filter#blur(x="0", y="0")
+            feGaussianBlur(in="SourceGraphic", stdDeviation="15")
+          clipPath#mask
+            circle#circle(cx="74%", cy="48%", r="0", filter="url(#blur)" )
+          g(clip-path="url(#mask)")
+            image(xlink:href="./img/phone-colored.png" width="100%" height="100%")
+      .row.align
+        .col
+          object#hi(data="./img/hi.svg", type="image/svg+xml")
+          h5 Call center entièrement basé en France, avec du personnel formé et spécialisé dans la prospection commerciale, gestion et service client ainsi que sur les enquêtes.
+      .bottom.row
+        span Découvrez les cléfs de notre succès !
+        .arrow
+
+
+
+script(src='./vendor.bundle.js')
+script(src='./app.bundle.js')
+

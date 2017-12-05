@@ -1,0 +1,194 @@
+#home {
+  text-align: right;
+  min-height: 100vh;
+
+  .row {
+    text-align: left;
+    height: 95vh;
+    position: relative;
+    z-index: 3;
+
+    object {
+      margin: 0;
+      width: 175px;
+      opacity: 0;
+      display: block;
+      @include transform(translate(0, 40px));
+    }
+
+    h5 {
+      color: $grey;
+      font-family: Merriweather;
+      font-weight: 300;
+      font-size: 18px;
+      margin: 0;
+      margin-top: 24px;
+      width: 25vw;
+      line-height: 1.7;
+      display: block;
+      opacity: 0;
+      @include transform(translate(0, 30px));
+    }
+  }
+
+  figure {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    z-index: 1;
+    width: 55vw;
+    overflow: hidden;
+
+    &:before {
+      padding-top: 108.857%;
+      content: "";
+      display: block;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      opacity: 0;
+      @include transform(translate(0, 160px) rotate(-10deg));
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 80px;
+    height: auto;
+
+    span {
+      color: $black;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 15px;
+      display: block;
+      opacity: 0;
+      @include transform(translate(0, 30px));
+    }
+
+    .arrow {
+      width: 0;
+      margin-top: 22px;
+      display: block;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 7.5px 0 7.5px;
+      border-color: $yellow transparent transparent transparent;
+      opacity: 0;
+      @include transform(translate(0, 100px));
+    }
+  }
+
+  #balls {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 4;
+    overflow: hidden;
+
+    .ball {
+      position: absolute;
+      z-index: 99;
+      left: 12.5%;
+      bottom: 75px;
+      width: 20px;
+      height: 20px;
+      border-radius: 40px;
+
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        content: "";
+        border-radius: 40px;
+        background-color: $yellow;
+        @include transform(scale(0));
+        @include transition(.33s .2s);
+      }
+    }
+
+    &.start {
+      .ball:after {
+        @include transform(scale(1));
+      }
+    }
+
+    &.done {
+
+      .ball {
+       @include transition(opacity .33s 0s !important);
+        opacity: 0 !important;
+      }
+
+      .ball:first-child:after {
+
+        @include transition(.33s 0s);
+        @include transform(scale(10));
+      }
+    }
+  }
+
+  &.ready {
+
+    .row {
+
+      object {
+        opacity: 1;
+        @include transition(.44s .6s);
+        @include transform(translate(0, 0));
+      }
+
+      h5 {
+        opacity: 1;
+        @include transition(.44s .75s);
+        @include transform(translate(0, 0));
+      }
+    }
+
+    figure {
+
+      img {
+        opacity: 1;
+        @include transform(translate(0, 0) rotate(0deg));
+        @include transition(ease-out .55s);
+      }
+    }
+
+    .bottom {
+
+      span {
+        opacity: 1;
+        @include transition(.44s .9s);
+        @include transform(translate(0, 0));
+      }
+
+      .arrow {
+        @include transition(.44s 1.05s);
+        @include transform(translate(0, 0));
+        opacity: 1;
+      }
+    }
+  }
+}
