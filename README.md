@@ -1,4 +1,4 @@
-# Le Taximetre
+# Hi !
 Le code compilé se  trouve dans le dossier `/dist`
 
 ### Modification
