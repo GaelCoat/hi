@@ -3,7 +3,6 @@
   background-color: $light;
   text-align: left;
   position: relative;
-  overflow: hidden;
 
   &:before {
     position: absolute;
@@ -37,7 +36,8 @@
   .each {
     width: 100%;
     display: block;
-    margin-top: 130px;
+    padding-top: 130px;
+    overflow: hidden;
 
     .col {
       width: 50%;
@@ -50,6 +50,7 @@
         height: 550px;
         @media screen and (max-width: $break-large) {
           font-size: 20px;
+          height: 480px;
         }
 
         img {
@@ -62,6 +63,10 @@
             right: auto;
             left: 0;
             max-height: 105%;
+          }
+
+          &.k {
+            min-width: 100%;
           }
         }
       }

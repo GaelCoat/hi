@@ -298,8 +298,7 @@ section {
   padding: 180px 0;
   background-color: #fafafa;
   text-align: left;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   #services:before {
     position: absolute;
     content: "";
@@ -326,7 +325,8 @@ section {
   #services .each {
     width: 100%;
     display: block;
-    margin-top: 130px; }
+    padding-top: 130px;
+    overflow: hidden; }
     #services .each .col {
       width: 50%;
       display: inline-block;
@@ -337,7 +337,8 @@ section {
         height: 550px; }
         @media screen and (max-width: 1460px) {
           #services .each .col.clr {
-            font-size: 20px; } }
+            font-size: 20px;
+            height: 480px; } }
         #services .each .col.clr img {
           position: absolute;
           right: 0;
@@ -347,6 +348,8 @@ section {
             right: auto;
             left: 0;
             max-height: 105%; }
+          #services .each .col.clr img.k {
+            min-width: 100%; }
       #services .each .col .txt {
         padding-left: 60px;
         width: 37.5vw;
