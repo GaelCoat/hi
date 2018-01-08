@@ -1,0 +1,38 @@
+#intro {
+  padding: 25vh 0;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: $break-large) {
+    padding-top: 33vh;
+  }
+
+  h5 {
+    color: $black;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: $break-large) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    color: $grey;
+    font-size: 16px;
+    font-family: Merriweather;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 100%;
+    width: 820px;
+    margin: auto;
+
+    @media screen and (max-width: $break-large) {
+      font-size: 15px;
+      width: 740px;
+    }
+  }
+}

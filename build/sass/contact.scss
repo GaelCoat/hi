@@ -1,0 +1,59 @@
+#contact {
+  height: 90vh;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 12.5vw;
+    background-color: $light;
+    height: 50%;
+    top: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 12.5vw;
+    background-color: $yellow;
+    height: 50%;
+    bottom: 0;
+  }
+
+
+  .row {
+    height: 100%;
+    text-align: center;
+    padding-right: 12.5vw;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 23vw;
+    }
+
+    h3 {
+      color: $black;
+      font-size: 20px;
+      font-family: Merriweather;
+      font-weight: 300;
+      line-height: 1.6;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    figure {
+      display: inline-block;
+      vertical-align: middle;
+      background-color: $yellow;
+      width: 3px;
+      height: 130px;
+      margin: 0 72px;
+      @include transform(rotate(30deg));
+    }
+  }
+}

@@ -1,0 +1,44 @@
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 44px 0;
+  z-index: 9;
+
+  .row:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  .left {
+    color: $yellow;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 32px;
+    display: block;
+    float: left;
+  }
+
+  .right {
+    float: right;
+    padding-top: 7px;
+
+    a {
+      color: $black;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 15px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 44px;
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 2px solid $black;
+      }
+    }
+  }
+}

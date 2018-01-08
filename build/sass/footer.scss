@@ -1,0 +1,65 @@
+footer {
+  background-color: $yellow;
+  padding: 90px 0;
+
+  .row {
+    text-align: left;
+
+    .col {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      height: 280px;
+      position: relative;
+
+      span {
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 17px;
+        display: block;
+        margin-bottom: 24px;
+      }
+
+      > a {
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        opacity: .8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      p {
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        display: block;
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        a {
+          margin-left: 6px;
+          color: #fff;
+          font-family: Montserrat;
+          font-weight: 400;
+          font-size: 16px;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

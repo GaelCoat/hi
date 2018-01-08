@@ -27,6 +27,9 @@ body {
   width: 75%;
   display: block;
   margin: 0 auto; }
+  @media screen and (max-width: 1460px) {
+    .row {
+      width: 90%; } }
 
 section {
   width: 100%;
@@ -77,6 +80,10 @@ section {
       -o-transform: translate(0, 30px);
       -ms-transform: translate(0, 30px);
       -webkit-transform: translate(0, 30px); }
+      @media screen and (max-width: 1460px) {
+        #home .row h5 {
+          width: 30vw;
+          font-size: 17px; } }
   #home figure {
     display: block;
     margin: 0;
@@ -114,11 +121,14 @@ section {
     margin: auto;
     bottom: 80px;
     height: auto; }
+    @media screen and (max-width: 1460px) {
+      #home .bottom {
+        bottom: 40px; } }
     #home .bottom span {
       color: #2a2a2a;
       font-family: Montserrat;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 14px;
       display: block;
       opacity: 0;
       transform: translate(0, 30px);
@@ -166,22 +176,14 @@ section {
         content: "";
         border-radius: 40px;
         background-color: #fad116;
-        transform: scale(0);
-        -moz-transform: scale(0);
-        -o-transform: scale(0);
-        -ms-transform: scale(0);
-        -webkit-transform: scale(0);
+        opacity: 0;
         transition: 0.33s 0.2s;
         -moz-transition: 0.33s 0.2s;
         -o-transition: 0.33s 0.2s;
         -ms-transition: 0.33s 0.2s;
         -webkit-transition: 0.33s 0.2s; }
     #home #balls.start .ball:after {
-      transform: scale(1);
-      -moz-transform: scale(1);
-      -o-transform: scale(1);
-      -ms-transform: scale(1);
-      -webkit-transform: scale(1); }
+      opacity: 1; }
     #home #balls.done .ball {
       transition: opacity 0.33s 0s !important;
       -moz-transition: opacity 0.33s 0s !important;
@@ -260,5 +262,256 @@ section {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     opacity: 1; }
+
+#intro {
+  padding: 25vh 0;
+  position: relative;
+  z-index: 1; }
+  @media screen and (max-width: 1460px) {
+    #intro {
+      padding-top: 33vh; } }
+  #intro h5 {
+    color: #2a2a2a;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 24px; }
+    @media screen and (max-width: 1460px) {
+      #intro h5 {
+        font-size: 20px; } }
+  #intro p {
+    color: #838383;
+    font-size: 16px;
+    font-family: Merriweather;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 100%;
+    width: 820px;
+    margin: auto; }
+    @media screen and (max-width: 1460px) {
+      #intro p {
+        font-size: 15px;
+        width: 740px; } }
+
+#services {
+  padding: 180px 0;
+  background-color: #fafafa;
+  text-align: left;
+  position: relative;
+  overflow: hidden; }
+  #services:before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: #fad116;
+    height: 305px;
+    left: 50%;
+    margin-left: -1px;
+    margin-top: -77px;
+    top: 0; }
+  #services span {
+    color: #2a2a2a;
+    font-size: 18px;
+    font-family: Merriweather;
+    font-weight: 300;
+    margin-left: 50%;
+    display: block;
+    padding-left: 24px;
+    line-height: 1.5; }
+    #services span small {
+      display: block;
+      font-size: 18px;
+      color: #838383; }
+  #services .each {
+    width: 100%;
+    display: block;
+    margin-top: 130px; }
+    #services .each .col {
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative; }
+      #services .each .col.clr {
+        background-color: #fad116;
+        height: 550px; }
+        @media screen and (max-width: 1460px) {
+          #services .each .col.clr {
+            font-size: 20px; } }
+        #services .each .col.clr img {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          max-height: 115%; }
+          #services .each .col.clr img.r {
+            right: auto;
+            left: 0;
+            max-height: 105%; }
+      #services .each .col .txt {
+        padding-left: 60px;
+        width: 37.5vw;
+        text-align: left;
+        display: inline-block; }
+        #services .each .col .txt h4 {
+          color: #2a2a2a;
+          font-family: Montserrat;
+          font-weight: 600;
+          font-size: 22px;
+          display: block;
+          margin-bottom: 24px; }
+          @media screen and (max-width: 1460px) {
+            #services .each .col .txt h4 {
+              font-size: 20px; } }
+        #services .each .col .txt p {
+          color: #838383;
+          font-size: 16px;
+          font-family: Merriweather;
+          font-weight: 300;
+          line-height: 1.6;
+          width: 100%;
+          margin: auto;
+          margin-top: 24px;
+          display: block; }
+          @media screen and (max-width: 1460px) {
+            #services .each .col .txt p {
+              font-size: 15px; } }
+      #services .each .col.r {
+        text-align: right; }
+        #services .each .col.r .txt {
+          padding-left: 0;
+          padding-right: 60px; }
+
+#contact {
+  height: 90vh;
+  position: relative; }
+  #contact:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 12.5vw;
+    background-color: #fafafa;
+    height: 50%;
+    top: 0; }
+  #contact:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 12.5vw;
+    background-color: #fad116;
+    height: 50%;
+    bottom: 0; }
+  #contact .row {
+    height: 100%;
+    text-align: center;
+    padding-right: 12.5vw;
+    position: relative; }
+    #contact .row img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 23vw; }
+    #contact .row h3 {
+      color: #2a2a2a;
+      font-size: 20px;
+      font-family: Merriweather;
+      font-weight: 300;
+      line-height: 1.6;
+      display: inline-block;
+      vertical-align: middle; }
+    #contact .row figure {
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #fad116;
+      width: 3px;
+      height: 130px;
+      margin: 0 72px;
+      transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -webkit-transform: rotate(30deg); }
+
+footer {
+  background-color: #fad116;
+  padding: 90px 0; }
+  footer .row {
+    text-align: left; }
+    footer .row .col {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      height: 280px;
+      position: relative; }
+      footer .row .col span {
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 17px;
+        display: block;
+        margin-bottom: 24px; }
+      footer .row .col > a {
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        opacity: .8; }
+        footer .row .col > a:hover {
+          opacity: 1; }
+      footer .row .col p {
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        display: block;
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+        footer .row .col p a {
+          margin-left: 6px;
+          color: #fff;
+          font-family: Montserrat;
+          font-weight: 400;
+          font-size: 16px;
+          text-decoration: none; }
+          footer .row .col p a:hover {
+            text-decoration: underline; }
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 44px 0;
+  z-index: 9; }
+  header .row:after {
+    display: block;
+    content: "";
+    clear: both; }
+  header .left {
+    color: #fad116;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 32px;
+    display: block;
+    float: left; }
+  header .right {
+    float: right;
+    padding-top: 7px; }
+    header .right a {
+      color: #2a2a2a;
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 15px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 44px;
+      border-bottom: 2px solid transparent;
+      text-decoration: none; }
+      header .right a:hover {
+        border-bottom: 2px solid #2a2a2a; }
 
 /*# sourceMappingURL=app.css.map*/

@@ -28,6 +28,11 @@
       display: block;
       opacity: 0;
       @include transform(translate(0, 30px));
+
+      @media screen and (max-width: $break-large) {
+        width: 30vw;
+        font-size: 17px;
+      }
     }
   }
 
@@ -73,11 +78,15 @@
     bottom: 80px;
     height: auto;
 
+    @media screen and (max-width: $break-large) {
+      bottom: 40px;
+    }
+
     span {
       color: $black;
       font-family: Montserrat;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 14px;
       display: block;
       opacity: 0;
       @include transform(translate(0, 30px));
@@ -124,14 +133,16 @@
         content: "";
         border-radius: 40px;
         background-color: $yellow;
-        @include transform(scale(0));
+        opacity: 0;
+        //@include transform(scale(0));
         @include transition(.33s .2s);
       }
     }
 
     &.start {
       .ball:after {
-        @include transform(scale(1));
+        opacity: 1;
+        //@include transform(scale(1));
       }
     }
 

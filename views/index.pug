@@ -7,6 +7,15 @@ html
     link(href="./css/normalize.css", rel="stylesheet", type="text/css")
     link(href="./css/app.css", rel="stylesheet", type="text/css")
   body
+    header
+      .row
+        .left HI !
+        .right
+          a(href='#home') Accueil
+          a(href='#intro') Mindset
+          a(href='#services') Services
+          a(href='#contact') Contact
+
     section#home
       #balls
         .ball
@@ -32,7 +41,64 @@ html
       .bottom.row
         span Découvrez les cléfs de notre succès !
         .arrow
-
+    section#intro
+      .row
+        h5 Faire décoller votre activité
+        p Notre objectif est de créer le premier centre d’appel ultra qualitatif et bon marché, accessible autant pour les start-ups que poutr les grandes entreprises. Parce que nous considérons que la prospection client, la gestion de la relation client et les enquêtes sont un enjeu essentiel pour chaque entreprise, nous souhaitons le rendre accessible à tous et ce, de manière très qualitative. Entourés de spécialistes, nous travaillons à fournir la meilleure qualité et les taux de conversation les plus importants. Vous n’avez quà vous concentrer sur votre activité !
+    section#services
+      span
+        | Nos services
+        small Plutot cool
+      .each
+        .col.clr
+          img(src='./img/magnifier.png')
+        .col
+          .txt
+            h4 Prospection commerciale
+            p Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+            p Quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles.
+            p Mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+            p Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment.
+      .each
+        .col.r
+          .txt
+            h4 Gestion et service client
+            p Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+            p Quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles.
+            p Mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+            p Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment.
+        .col.clr
+          img.r(src='./img/thumbs.png')
+      .each
+        .col.clr
+          img(src='./img/magnifier.png')
+        .col
+          .txt
+            h4 Enquêtes
+            p Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+            p Quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles.
+            p Mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
+            p Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment.
+    section#contact
+      .row.align
+        img(src='./img/hi-l.svg')
+        h3 01 76 44 04 37
+        figure
+        h3 contact@callperfom.fr
+    footer
+      .row
+        .col
+          span A propos
+          a(href='#home') Accueil
+          a(href='#intro') Mindset
+          a(href='#services') Services
+          a(href='#contact') Contact
+          p Made with love by
+            a(href='http://fluzandpowo.com/', target='_blank') flüz&powo
+        .col
+          span Informations
+          a(href='/') Mentions légales et conditions générales
+          p Copyright CANNETROTTER SAS 2017
 
 
 script(src='./vendor.bundle.js')
