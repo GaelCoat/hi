@@ -8,12 +8,22 @@
     position: relative;
     z-index: 3;
 
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      height: 60vh;
+      text-align: center;
+    }
+
     object {
       margin: 0;
       width: 175px;
       opacity: 0;
       display: block;
       @include transform(translate(0, 40px));
+
+      @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        width: 33vw;
+        margin: 0 auto;
+      }
     }
 
     h5 {
@@ -32,6 +42,11 @@
       @media screen and (max-width: $break-large) {
         width: 30vw;
         font-size: 17px;
+      }
+
+      @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        width: 90vw;
+        font-size: 35px;
       }
     }
   }
@@ -68,6 +83,11 @@
       opacity: 0;
       @include transform(translate(0, 160px) rotate(-10deg));
     }
+
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      top: 50%;
+      width: 90vw;
+    }
   }
 
   .bottom {
@@ -103,6 +123,19 @@
       opacity: 0;
       @include transform(translate(0, 100px));
     }
+
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+      display: none;
+
+      span {
+        font-size: 28px;
+      }
+
+      .arrow {
+        border-width: 16px 15px 0 15px;
+      }
+    }
   }
 
   #balls {
@@ -123,6 +156,11 @@
       width: 20px;
       height: 20px;
       border-radius: 40px;
+
+      @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        width: 34px;
+        height: 34px;
+      }
 
       &:after {
         position: absolute;

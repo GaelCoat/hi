@@ -13,6 +13,10 @@ const AppView = Backbone.View.extend({
 
     var that = this;
 
+    var size = 55;
+
+    if ($(window).width() <= 1000) size = 90;
+
     $('.ball').css({
       'left': pos.x,
       'top': pos.y
@@ -26,7 +30,7 @@ const AppView = Backbone.View.extend({
       onComplete: function() {
 
         that.$el.find('#balls').addClass('done');
-        TweenLite.to("#circle", 1.33, {attr: {r: '55vw'}, ease: Power1.easeOut});
+        TweenLite.to("#circle", 1.33, {attr: {r: size+'vw'}, ease: Power1.easeOut});
       }
     });
 
@@ -66,6 +70,8 @@ const AppView = Backbone.View.extend({
     var that = this;
 
     return q.fcall(function() {
+
+      if ($(window).width() <= 1000) that.$el.find('#home').height($(window).height());
 
       // LOAD SHIT
       return true;

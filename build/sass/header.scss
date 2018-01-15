@@ -36,9 +36,15 @@ header {
       border-bottom: 2px solid transparent;
       text-decoration: none;
 
+
       &:hover {
         border-bottom: 2px solid $black;
       }
     }
+  }
+
+  @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    display: none;
   }
 }

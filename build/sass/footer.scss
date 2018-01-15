@@ -61,5 +61,30 @@ footer {
         }
       }
     }
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+      .col {
+        height: 420px;
+
+        span {
+          font-size: 38px;
+        }
+
+        a {
+          font-size: 33px;
+          margin-top: 20px;
+        }
+
+        p {
+          font-size: 32px;
+          line-height: 1.5;
+
+          a {
+            font-size: 32px;
+          }
+        }
+      }
+    }
   }
+
 }

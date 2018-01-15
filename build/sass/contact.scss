@@ -56,4 +56,26 @@
       @include transform(rotate(30deg));
     }
   }
+
+  @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    height: 80vw;
+
+    &:before,
+    &:after {
+      width: 5vw;
+    }
+
+    .row {
+      padding-right: 5vw;
+
+      img {
+        width: 40vw;
+      }
+
+      h3 {
+        font-size: 34px;
+      }
+    }
+  }
 }

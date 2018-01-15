@@ -54,6 +54,10 @@ section {
     height: 95vh;
     position: relative;
     z-index: 3; }
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      #home .row {
+        height: 60vh;
+        text-align: center; } }
     #home .row object {
       margin: 0;
       width: 175px;
@@ -64,6 +68,10 @@ section {
       -o-transform: translate(0, 40px);
       -ms-transform: translate(0, 40px);
       -webkit-transform: translate(0, 40px); }
+      @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        #home .row object {
+          width: 33vw;
+          margin: 0 auto; } }
     #home .row h5 {
       color: #838383;
       font-family: Merriweather;
@@ -84,6 +92,10 @@ section {
         #home .row h5 {
           width: 30vw;
           font-size: 17px; } }
+      @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        #home .row h5 {
+          width: 90vw;
+          font-size: 35px; } }
   #home figure {
     display: block;
     margin: 0;
@@ -114,6 +126,10 @@ section {
       -o-transform: translate(0, 160px) rotate(-10deg);
       -ms-transform: translate(0, 160px) rotate(-10deg);
       -webkit-transform: translate(0, 160px) rotate(-10deg); }
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      #home figure {
+        top: 50%;
+        width: 90vw; } }
   #home .bottom {
     position: absolute;
     left: 0;
@@ -150,6 +166,13 @@ section {
       -o-transform: translate(0, 100px);
       -ms-transform: translate(0, 100px);
       -webkit-transform: translate(0, 100px); }
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      #home .bottom {
+        display: none; }
+        #home .bottom span {
+          font-size: 28px; }
+        #home .bottom .arrow {
+          border-width: 16px 15px 0 15px; } }
   #home #balls {
     position: absolute;
     pointer-events: none;
@@ -167,6 +190,10 @@ section {
       width: 20px;
       height: 20px;
       border-radius: 40px; }
+      @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+        #home #balls .ball {
+          width: 34px;
+          height: 34px; } }
       #home #balls .ball:after {
         position: absolute;
         left: 0;
@@ -293,6 +320,14 @@ section {
       #intro p {
         font-size: 15px;
         width: 740px; } }
+  @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #intro {
+      padding: 30vw 0; }
+      #intro h5 {
+        font-size: 45px; }
+      #intro p {
+        font-size: 40px;
+        width: 100%; } }
 
 #services {
   padding: 180px 0;
@@ -309,6 +344,9 @@ section {
     margin-left: -1px;
     margin-top: -77px;
     top: 0; }
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      #services:before {
+        height: 360px; } }
   #services span {
     color: #2a2a2a;
     font-size: 18px;
@@ -322,6 +360,11 @@ section {
       display: block;
       font-size: 18px;
       color: #838383; }
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      #services span {
+        font-size: 38px; }
+        #services span small {
+          font-size: 38px; } }
   #services .each {
     width: 100%;
     display: block;
@@ -355,6 +398,8 @@ section {
         width: 37.5vw;
         text-align: left;
         display: inline-block; }
+        #services .each .col .txt figure {
+          display: none; }
         #services .each .col .txt h4 {
           color: #2a2a2a;
           font-family: Montserrat;
@@ -383,6 +428,51 @@ section {
         #services .each .col.r .txt {
           padding-left: 0;
           padding-right: 60px; }
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      #services .each {
+        padding-top: 200px; }
+        #services .each .col {
+          display: block;
+          width: 100%; }
+          #services .each .col.clr {
+            display: none; }
+          #services .each .col figure.mobile {
+            display: block;
+            background-color: #fad116;
+            width: 100vw;
+            height: 33vw;
+            text-align: left;
+            margin-left: 0;
+            position: relative;
+            overflow: hidden;
+            margin: 40px 0; }
+            #services .each .col figure.mobile img {
+              position: absolute; }
+              #services .each .col figure.mobile img.k {
+                width: 100%;
+                height: 170%;
+                left: 0;
+                bottom: -80px; }
+              #services .each .col figure.mobile img.r {
+                left: 0;
+                bottom: 0;
+                width: 80%; }
+              #services .each .col figure.mobile img.e {
+                width: 60%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: -140px; }
+          #services .each .col .txt {
+            width: 100%;
+            padding-left: 0 !important;
+            padding-right: 0 !important; }
+            #services .each .col .txt h4 {
+              font-size: 50px;
+              padding: 0 5vw; }
+            #services .each .col .txt p {
+              font-size: 38px;
+              padding: 0 5vw; } }
 
 #contact {
   height: 90vh;
@@ -433,6 +523,17 @@ section {
       -o-transform: rotate(30deg);
       -ms-transform: rotate(30deg);
       -webkit-transform: rotate(30deg); }
+  @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #contact {
+      height: 80vw; }
+      #contact:before, #contact:after {
+        width: 5vw; }
+      #contact .row {
+        padding-right: 5vw; }
+        #contact .row img {
+          width: 40vw; }
+        #contact .row h3 {
+          font-size: 34px; } }
 
 footer {
   background-color: #fad116;
@@ -482,6 +583,19 @@ footer {
           text-decoration: none; }
           footer .row .col p a:hover {
             text-decoration: underline; }
+    @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+      footer .row .col {
+        height: 420px; }
+        footer .row .col span {
+          font-size: 38px; }
+        footer .row .col a {
+          font-size: 33px;
+          margin-top: 20px; }
+        footer .row .col p {
+          font-size: 32px;
+          line-height: 1.5; }
+          footer .row .col p a {
+            font-size: 32px; } }
 
 header {
   position: absolute;
@@ -516,5 +630,8 @@ header {
       text-decoration: none; }
       header .right a:hover {
         border-bottom: 2px solid #2a2a2a; }
+  @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    header {
+      display: none; } }
 
 /*# sourceMappingURL=app.css.map*/
