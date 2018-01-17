@@ -94,8 +94,8 @@ section {
           font-size: 17px; } }
       @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
         #home .row h5 {
-          width: 90vw;
-          font-size: 35px; } }
+          width: 85vw;
+          font-size: 37px; } }
   #home figure {
     display: block;
     margin: 0;
@@ -326,8 +326,8 @@ section {
       #intro h5 {
         font-size: 45px; }
       #intro p {
-        font-size: 40px;
-        width: 100%; } }
+        font-size: 37px;
+        width: 90%; } }
 
 #services {
   padding: 180px 0;
@@ -362,9 +362,9 @@ section {
       color: #838383; }
     @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
       #services span {
-        font-size: 38px; }
+        font-size: 37px; }
         #services span small {
-          font-size: 38px; } }
+          font-size: 37px; } }
   #services .each {
     width: 100%;
     display: block;
@@ -440,7 +440,7 @@ section {
             display: block;
             background-color: #fad116;
             width: 100vw;
-            height: 33vw;
+            height: 45vw;
             text-align: left;
             margin-left: 0;
             position: relative;
@@ -455,14 +455,14 @@ section {
                 bottom: -80px; }
               #services .each .col figure.mobile img.r {
                 left: 0;
-                bottom: 0;
-                width: 80%; }
+                bottom: -10px;
+                width: 63%; }
               #services .each .col figure.mobile img.e {
                 width: 60%;
                 left: 0;
                 right: 0;
                 margin: auto;
-                top: -140px; }
+                top: -55px; }
           #services .each .col .txt {
             width: 100%;
             padding-left: 0 !important;
@@ -471,7 +471,7 @@ section {
               font-size: 50px;
               padding: 0 5vw; }
             #services .each .col .txt p {
-              font-size: 38px;
+              font-size: 37px;
               padding: 0 5vw; } }
 
 #contact {

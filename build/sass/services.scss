@@ -39,10 +39,10 @@
 
     @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
-      font-size: 38px;
+      font-size: 37px;
 
       small {
-        font-size: 38px;
+        font-size: 37px;
       }
     }
   }
@@ -152,7 +152,7 @@
           display: block;
           background-color: $yellow;
           width: 100vw;
-          height: 33vw;
+          height: 45vw;
           text-align: left;
           margin-left: 0;
           position: relative;
@@ -171,8 +171,8 @@
 
             &.r {
               left: 0;
-              bottom: 0;
-              width: 80%;
+              bottom: -10px;
+              width: 63%;
             }
 
             &.e {
@@ -180,7 +180,7 @@
               left: 0;
               right: 0;
               margin: auto;
-              top: -140px;
+              top: -55px;
             }
           }
         }
@@ -196,7 +196,7 @@
           }
 
           p {
-            font-size: 38px;
+            font-size: 37px;
             padding: 0 5vw;
           }
         }
