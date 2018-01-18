@@ -4,6 +4,7 @@ html
     title Hi !
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel="icon", href="./favicon.ico")
     link(href="./css/normalize.css", rel="stylesheet", type="text/css")
     link(href="./css/app.css", rel="stylesheet", type="text/css")
   body
@@ -12,9 +13,11 @@ html
         .left HI !
         .right
           a(href='#home') Accueil
-          a(href='#intro') Mindset
+          a(href='#intro') Nos valeurs
           a(href='#services') Services
           a(href='#contact') Contact
+          a.numb 01 86 76 71 71
+          a.numb.mobile(href='tel://0176440437') 01 86 76 71 71
 
     section#home
       #balls
@@ -37,18 +40,35 @@ html
       .row.align
         .col
           object#hi(data="./img/hi.svg", type="image/svg+xml")
-          h5 Call center entièrement basé en France, avec du personnel formé et spécialisé dans la prospection commerciale, gestion et service client ainsi que sur les enquêtes.
+          h5 Centre d’appels entièrement basé en France, avec du personnel formé et spécialisé dans la prospection commerciale, gestion et service client ainsi que sur les enquêtes.
       .bottom.row
-        span Découvrez les cléfs de notre succès !
+        span Découvrez les clés de notre succès !
         .arrow
+
+
+
     section#intro
       .row
         h5 Faire décoller votre activité
-        p Notre objectif est de créer le premier centre d’appel ultra qualitatif et bon marché, accessible autant pour les start-ups que poutr les grandes entreprises. Parce que nous considérons que la prospection client, la gestion de la relation client et les enquêtes sont un enjeu essentiel pour chaque entreprise, nous souhaitons le rendre accessible à tous et ce, de manière très qualitative. Entourés de spécialistes, nous travaillons à fournir la meilleure qualité et les taux de conversation les plus importants. Vous n’avez quà vous concentrer sur votre activité !
+        p Notre objectif est de créer le premier centre d’appels ultra qualitatif et bon marché, accessible pour les start-ups comme pour les grandes entreprises. Parce que nous considérons que la prospection client, la gestion de la relation client et les enquêtes sont un enjeu essentiel pour chaque entreprise, nous souhaitons les rendre accessibles à tous et ce, avec
+          b  exigence
+          |  et
+          b  professionnalisme.
+          |  Nous sommes entourés de spécialistes et mettons à votre disposition des outils
+          b  souples et collaboratifs
+          |  : instruments de suivi, ouverture de lignes à la demande, etc. Nous travaillons à fournir la
+          b  meilleure qualité
+          |  et
+          b  les taux de conversation
+          |  les plus importants. Il ne vous reste plus qu’à vous concentrer sur
+          b  votre coeur de métier !
+
+
+
     section#services
       span
         | Nos services
-        small Plutot cool
+        small Prospection / Gestion client / Enquêtes
       .each
         .col.clr
           img.k(src='./img/curves.png')
@@ -57,22 +77,37 @@ html
             h4 Prospection commerciale
             figure.mobile
               img.k(src='./img/curves.png')
-            p Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
-            p Quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles.
-            p Mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
-            p Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment.
+            p Notre équipe est composée de téléopérateurs dédiés à votre prospection commerciale. Leur expertise ?
+              b  Les appels sortants.
+
+            ul
+              li Vous nous confiez votre base de prospects à contacter par téléphone.
+              li Nous préparons un script d’appels.
+              li Nous appelons.
+              li Nous convertissons.
+
+
       .each
         .col.r
           .txt
-            h4 Gestion et service client
+            h4 Appels entrants  Gestion et service client
             figure.mobile
               img.r(src='./img/thumbs.png')
-            p Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
-            p Quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles.
-            p Mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
-            p Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment.
+            p Notre équipe compte des spécialistes de la relation client. Leur expertise ?
+              b  Les appels entrants.
+
+            ul
+              li Vous nous confiez un service dédié.
+              li Vous communiquez un numéro de téléphone à vos clients.
+              li Ils appellent.
+              li Nous répondons.
+              li Nous traitons.
+              li Nous vous remontons les retours terrains.
+
         .col.clr
           img.r(src='./img/thumbs.png')
+
+
       .each
         .col.clr
           img(src='./img/magnifier.png')
@@ -81,16 +116,23 @@ html
             h4 Enquêtes
             figure.mobile
               img.e(src='./img/magnifier.png')
-            p Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
-            p Quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles.
-            p Mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.
-            p Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment.
+            p Notre équipe compte des professionnels des enquêtes clients. Leur expertise ?
+              b  L’analyse.
+
+            ul
+              li Vous nous confiez des enquêtes à réaliser.
+              li Nous appelons.
+              li Nous recueillons.
+              li Nous analysons.
+              li Nous vous remontons les conclusions.
+
+
     section#contact
       .row.align
         img(src='./img/hi-l.svg')
-        h3 01 76 44 04 37
+        h3 01 86 76 71 71
         figure
-        h3 contact@callperfom.fr
+        h3 hi@hicentredappels.com
     footer
       .row
         .col

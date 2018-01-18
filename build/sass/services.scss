@@ -17,7 +17,7 @@
 
     @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
-      height: 360px;
+      height: 300px;
     }
   }
 
@@ -40,9 +40,11 @@
     @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
       font-size: 37px;
+      font-weight: 500;
 
       small {
         font-size: 37px;
+        display: none;
       }
     }
   }
@@ -123,6 +125,28 @@
             font-size: 15px;
           }
         }
+
+        ul {
+          padding-left: 40px;
+          color: $grey;
+          font-size: 16px;
+          font-family: Merriweather;
+          font-weight: 300;
+          line-height: 1.6;
+          width: 100%;
+          margin: auto;
+          margin-top: 24px;
+          display: block;
+
+          @media screen and (max-width: $break-large) {
+            font-size: 15px;
+          }
+
+          li {
+            margin-top: 8px;
+            list-style: disc;
+          }
+        }
       }
 
       &.r {
@@ -198,6 +222,16 @@
           p {
             font-size: 37px;
             padding: 0 5vw;
+          }
+
+          ul {
+            font-size: 37px;
+            padding: 0 5vw;
+            padding-left: 12vw;
+
+            li {
+              margin-top: 22px;
+            }
           }
         }
       }

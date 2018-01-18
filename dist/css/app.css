@@ -23,6 +23,9 @@ body {
   height: 100%;
   text-align: center; }
 
+b {
+  color: #2a2a2a; }
+
 .row {
   width: 75%;
   display: block;
@@ -56,7 +59,7 @@ section {
     z-index: 3; }
     @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
       #home .row {
-        height: 60vh;
+        height: 70vh;
         text-align: center; } }
     #home .row object {
       margin: 0;
@@ -128,7 +131,7 @@ section {
       -webkit-transform: translate(0, 160px) rotate(-10deg); }
     @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
       #home figure {
-        top: 50%;
+        top: 55%;
         width: 90vw; } }
   #home .bottom {
     position: absolute;
@@ -346,7 +349,7 @@ section {
     top: 0; }
     @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
       #services:before {
-        height: 360px; } }
+        height: 300px; } }
   #services span {
     color: #2a2a2a;
     font-size: 18px;
@@ -362,9 +365,11 @@ section {
       color: #838383; }
     @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
       #services span {
-        font-size: 37px; }
+        font-size: 37px;
+        font-weight: 500; }
         #services span small {
-          font-size: 37px; } }
+          font-size: 37px;
+          display: none; } }
   #services .each {
     width: 100%;
     display: block;
@@ -423,6 +428,23 @@ section {
           @media screen and (max-width: 1460px) {
             #services .each .col .txt p {
               font-size: 15px; } }
+        #services .each .col .txt ul {
+          padding-left: 40px;
+          color: #838383;
+          font-size: 16px;
+          font-family: Merriweather;
+          font-weight: 300;
+          line-height: 1.6;
+          width: 100%;
+          margin: auto;
+          margin-top: 24px;
+          display: block; }
+          @media screen and (max-width: 1460px) {
+            #services .each .col .txt ul {
+              font-size: 15px; } }
+          #services .each .col .txt ul li {
+            margin-top: 8px;
+            list-style: disc; }
       #services .each .col.r {
         text-align: right; }
         #services .each .col.r .txt {
@@ -472,7 +494,13 @@ section {
               padding: 0 5vw; }
             #services .each .col .txt p {
               font-size: 37px;
-              padding: 0 5vw; } }
+              padding: 0 5vw; }
+            #services .each .col .txt ul {
+              font-size: 37px;
+              padding: 0 5vw;
+              padding-left: 12vw; }
+              #services .each .col .txt ul li {
+                margin-top: 22px; } }
 
 #contact {
   height: 90vh;
@@ -628,10 +656,39 @@ header {
       margin-left: 44px;
       border-bottom: 2px solid transparent;
       text-decoration: none; }
+      header .right a.numb {
+        background-color: #fff;
+        border-radius: 40px;
+        box-shadow: 0 4px 9px 0 rgba(42, 42, 42, 0.05), 0 7px 18px 0 rgba(42, 42, 42, 0.05);
+        -moz-box-shadow: 0 4px 9px 0 rgba(42, 42, 42, 0.05), 0 7px 18px 0 rgba(42, 42, 42, 0.05);
+        -o-box-shadow: 0 4px 9px 0 rgba(42, 42, 42, 0.05), 0 7px 18px 0 rgba(42, 42, 42, 0.05);
+        -ms-box-shadow: 0 4px 9px 0 rgba(42, 42, 42, 0.05), 0 7px 18px 0 rgba(42, 42, 42, 0.05);
+        -webkit-box-shadow: 0 4px 9px 0 rgba(42, 42, 42, 0.05), 0 7px 18px 0 rgba(42, 42, 42, 0.05);
+        border-bottom: 0px !important;
+        padding: 12px 18px; }
+        header .right a.numb.mobile {
+          display: none; }
       header .right a:hover {
         border-bottom: 2px solid #2a2a2a; }
   @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    header {
-      display: none; } }
+    header .left {
+      font-size: 75px; }
+    header .right {
+      padding-top: 0; }
+      header .right a:not(.mobile) {
+        display: none; }
+      header .right a.numb {
+        background-color: #fad116;
+        color: #fff;
+        border-radius: 60px;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        -ms-box-shadow: none;
+        -webkit-box-shadow: none;
+        padding: 20px 40px;
+        font-size: 40px; }
+      header .right a.numb.mobile {
+        display: inline-block; } }
 
 /*# sourceMappingURL=app.css.map*/

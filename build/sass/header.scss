@@ -36,6 +36,18 @@ header {
       border-bottom: 2px solid transparent;
       text-decoration: none;
 
+      &.numb {
+        background-color: #fff;
+        border-radius: 40px;
+        @include shadow(0 4px 9px 0 transparentize($black, .95), 0 7px 18px 0 transparentize($black, .95));
+        border-bottom: 0px !important;
+        padding: 12px 18px;
+
+        &.mobile {
+          display: none;
+        }
+      }
+
 
       &:hover {
         border-bottom: 2px solid $black;
@@ -45,6 +57,29 @@ header {
 
   @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
-    display: none;
+    .left {
+      font-size: 75px;
+    }
+
+    .right {
+      padding-top: 0;
+
+      a:not(.mobile) {
+        display: none;
+      }
+
+      a.numb {
+        background-color: $yellow;
+        color: #fff;
+        border-radius: 60px;
+        @include shadow(none);
+        padding: 20px 40px;
+        font-size: 40px;
+      }
+
+      a.numb.mobile {
+        display: inline-block;
+      }
+    }
   }
 }
